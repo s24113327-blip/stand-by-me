@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Stand the Bottle — Prototype</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    html,body { height:100%; margin:0; background:#1b1b2f; }
+    #game { width:100%; height:100vh; display:block; }
+    .ui { position:absolute; top:10px; left:10px; color:#fff; font-family:Arial; z-index:10; }
+    button { font-size:16px; padding:6px 10px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+  <div class="ui">
+    <div id="message">Drag the ring, loop it over the bottle neck, then lift up!</div>
+    <div style="margin-top:8px;">
+      <button id="restartBtn">Restart</button>
+      <span style="margin-left:12px;color:#fff">Score: <span id="score">0</span></span>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
